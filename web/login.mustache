@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Connectez vous</title>
+		<link href="/static/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<h1>Connectez vous au site</h1>
+		</header>
+		<section>
+			<form action="/authenticate" method="POST">
+				{{#errorMessage}}
+					<p class="errorMessage">{{errorMessage}}</p>
+				{{/errorMessage}}
+				<label for="password">Entrez le mot de passe</label>
+				<input class="inputText" type="password" name="password" placeholder="Mot de passe" required/>
+
+				<input type="submit" value="Envoyer" class="button {{#errorMessage}}error{{/errorMessage}}"/>
+			</form>
+		</section>
+	</body>
+</html>

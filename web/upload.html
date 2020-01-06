@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Uploadez des fichiers</title>
+		<link href="/static/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<h1>Ajouter un fichier</h1>
+		</header>
+		<section>
+			<form action="/upload" method="POST" enctype="multipart/form-data">
+				<label for="title">Titre de votre fichier</label>
+				<input type="text" name="title" placeholder="Titre" class="inputText" required /> <br>
+
+				<label for="saveDuring">Nombre de jour de concervation</label>
+				<input type="number" name="saveDuring" placeholder="1" value="1" class="inputText" required /> <br>
+
+				<label for="maxDl">Nombre maximum de téléchargement</label>
+				<input type="number" name="maxDl" placeholder="1" value="1" class="inputText" required /> <br>
+
+				<label for="url">URL de votre fichier</label>
+				<input type="text" name="url" placeholder="uneUrl" class="inputText" required /> <br>
+
+				<label for="file">Votre fichier</label>
+				<input type="file" name="file" required /> <br>
+
+				<input type="submit" value="Envoyer" class="button"/>
+			</form>
+		</section>
+	</body>
+</html>

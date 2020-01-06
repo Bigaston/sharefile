@@ -1,0 +1,6 @@
+- Ajouter création automatique dossier file
+- Trouver pourquoi .0. dans BDD
+- Comptage du nombre de téléchargement
+- Suppression au bout d'un moment
+- Dashboard pour supprimer ses fichiers
+- Systeme de compte
